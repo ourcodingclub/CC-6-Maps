@@ -5,7 +5,7 @@ This repository contains the files necessary to complete the first Coding Club R
 
 The data (`Gyps_rueppellii_GBIF.csv`, `Spheniscus_dermersus_GBIF.csv`) were downloaded from the Global Biodiversity Information Facility (GBIF) https://www.gbif.org.
 
-ggmap_cheatsheet.pdf was downloaded from the National Centre for Ecological Analysis and Synthesis (NCEAS) https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/ggmap/ggmapCheatsheet.pdf
+`ggmap_Cheatsheet.pdf` was downloaded from the National Centre for Ecological Analysis and Synthesis (NCEAS) https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/ggmap/ggmapCheatsheet.pdf
 
 For more about Coding Club, please see https://ourcodingclub.github.io/
 
