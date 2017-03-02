@@ -13,4 +13,5 @@ The Freshwater Ecoregions shapefile (`FEOW-TNC`) was downloaded from http://www.
 
 For more about Coding Club, please see https://ourcodingclub.github.io/
 
-We would love to hear your feedback on the tutorial, whether you did it in the classroom or online: __SURVEY MONKEY LINK__
+We would love to hear your feedback on the tutorial, whether you did it in the classroom or online:
+https://www.surveymonkey.co.uk/r/NMD3N5K
