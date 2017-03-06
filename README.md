@@ -1,7 +1,7 @@
 # CC-6-Maps
 Using R to produce map figures and display spatial data
 
-This repository contains the files necessary to complete the first Coding Club R Markdown tutorial - you can check it out at https://ourcodingclub.github.io/2016/11/25/maps_tutorial.html
+This repository contains the files necessary to complete the Coding Club R Markdown tutorial - you can check it out at https://ourcodingclub.github.io/2016/11/25/maps_tutorial.html
 
 The bird data (`Gyps_rueppellii_GBIF.csv`, `Spheniscus_dermersus_GBIF.csv`) were downloaded from the Global Biodiversity Information Facility (GBIF) https://www.gbif.org.
 
