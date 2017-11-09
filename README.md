@@ -9,7 +9,11 @@ The trout data (`Brown_Trout_GBIF_clip.csv`) were downloaded from GBIF and modif
 
 The Freshwater Ecoregions shapefile (`FEOW-TNC`) was downloaded from http://www.feow.org
 
+`play_areas.csv` was downloaded from http://data.edinburghopendata.info/dataset/play-areas
+
 `ggmap_Cheatsheet.pdf` and `Coord_Ref_Systems.pdf` were downloaded from the National Centre for Ecological Analysis and Synthesis (NCEAS) https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/
+
+`maps_tutorial_script.R` gives a concise version of all the code used in this tutorial.
 
 For more about Coding Club, please see https://ourcodingclub.github.io/
 
