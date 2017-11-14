@@ -76,7 +76,9 @@ ggplot() +
 						 aes(x = decimallongitude, y = decimallatitude, colour = scientificname)) +
 	coord_quickmap() +  # Define aspect ratio of the map, so it doesn't get stretched when resizing
 	theme_classic() +  # Remove ugly grey background
-	theme(legend.position = "top")  # Position the legend at the top of the plot
+	xlab("Longitude") +
+	ylab("Latitude") + 
+	guides(colour=guide_legend(title="Species"))
 
 # Make a vector of country names
 saf_countries <- c("South Africa", "Namibia", "Botswana", "Zimbabwe")
@@ -92,7 +94,10 @@ ggplot() +
 	xlim(8, 35) +  # Set x axis limits, xlim(min, max)
 	ylim(-35, -15) +  # Set y axis limits
 	theme_classic() +  # Remove ugly grey background
-	theme(legend.position = "top")  # Position the legend at the top of the plot
+	theme(legend.position = "top") + # Position the legend at the top of the plot + 
+	xlab("Longitude") +
+	ylab("Latitude") + 
+	guides(colour=guide_legend(title="Species"))
 
 # Plotting with `ggmap`
 
@@ -193,19 +198,20 @@ map_FEOW <- ggplot() +
 						 aes(x = decimallongitude, y = decimallatitude),
 						 data = brown_trout) +
 	theme_classic() +
-	theme(legend.position="none") +
+	theme(legend.position="bottom") +
+	theme(legend.title=element_blank()) + 
 	xlab("Longitude") +
 	ylab("Latitude")
 
 # Add annotations
 map_FEOW_annot <- map_FEOW +
 	annotate("rect", xmin = 20 , xmax = 35, ymin = 55, ymax = 65, fill="red", alpha=0.5) +
-	annotate("text", x = 27.5, y = 61, size = 10, label = "Restock Area")
+	annotate("text", x = 27.5, y = 61, size = 5, label = "Restock Area")
 
 map_FEOW_scale <- map_FEOW_annot +
 	scalebar(location="topleft", data = shpData_FEOW_clipped_fort,
 					 dd2km = TRUE, dist = 500, model='WGS84',
 					 height = 0.01)
 
-north2(map_FEOW_scale, x = 0.2, y = 0.2, scale = 0.1, symbol = 1)
+north2(map_FEOW_scale, x = 0.3, y = 0.4, scale = 0.1, symbol = 1)
 
