@@ -1,8 +1,11 @@
-# ggmap_fix_script
-rm(list = ls())
+# Coding Club Maps Tutorial Script
+# https://ourcodingclub.github.io/2016/12/11/maps_tutorial.html
+# John Godlee
+# ourcodingclub@gmail.com
+# 2018_12_29
 
 # Set working directory
-setwd("~/git_proj/CC-6-Maps")
+setwd("Path_to_folder")
 
 # Load packages
 library(ggplot2)  # ggplot() fortify()
