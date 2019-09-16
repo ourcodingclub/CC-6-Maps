@@ -160,19 +160,20 @@ map_FEOW <- ggplot() +
 	coord_quickmap()
 
 # Add annotations
-map_FEOW_annot <- map_FEOW +
-	annotate("rect", xmin = 20 , xmax = 35, ymin = 55, ymax = 65, fill="red", alpha=0.5) +
-	annotate("text", x = 27.5, y = 61, size = 10, label = "Restock Area")
+(map_FEOW_annot <- map_FEOW +
+  annotate("rect", xmin = 20 , xmax = 35, ymin = 55, ymax = 65, fill="red", alpha=0.5) +
+  annotate("text", x = 27.5, y = 61, size = 10, label = "Restock\nArea"))
+
 
 # Add scalebar
 map_FEOW_scale <- map_FEOW_annot +
-	scalebar(location="topleft", data = shpdata_FEOW_clip_f,
-		dd2km = TRUE, dist = 250, model='WGS84',
-		height = 0.01)
+  scalebar(data = shpdata_FEOW_clip_f,
+    transform = TRUE, dist = 500, dist_unit = "km", model='WGS84',
+    height = 0.01, 
+    location = "bottomright", anchor = c(x = 25, y = 32))
 
 # Add north arrow
-map_FEOW_scale 
-north2(map_FEOW_scale, x = 0.2, y = 0.2, scale = 0.1, symbol = 1)
+north2(map_FEOW_scale, x = 0.3, y = 0.85, scale = 0.1, symbol = 1)
 
 # See how many points are in which polygons
 
